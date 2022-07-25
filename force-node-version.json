@@ -2,5 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Enforces a consistent @types/node package version. Use `:force-node-version(16)` to force version 16",
 
-  "packageRules": [{ "matchPackageNames": ["@types/node"], "allowedVersions": "{{arg0}}.x" }]
+  "packageRules": [
+    {
+      "description": "Force @types/node dependency version",
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "{{arg0}}.x"
+    },
+    {
+      "description": "Force Node image version",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchPackageNames": ["node"],
+      "allowedVersions": "{{arg0}}.x"
+    }
+  ]
 }
