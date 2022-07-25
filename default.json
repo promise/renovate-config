@@ -23,11 +23,12 @@
     "rangeStrategy": "update-lockfile"
   },
 
+  "platformAutomerge": true,
   "packageRules": [
     {
       "description": "Automerge dependencies with built-in type definitions",
       "matchPackageNames": ["discord.js"],
-      "extends": ["github>promise/renovate-config:fully-automated-repository"]
+      "automerge": true
     },
     {
       "description": "Group Docusaurus dependencies",

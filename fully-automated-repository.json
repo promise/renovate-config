@@ -3,6 +3,5 @@
   "description": "Renovate config for fully automated repositories (automatically tested e.g. with preview deployments) - extends the default config.",
   "extends": ["github>promise/renovate-config"],
 
-  "automerge": true,
-  "platformAutomerge": true
+  "automerge": true
 }
