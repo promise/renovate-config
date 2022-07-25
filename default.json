@@ -31,7 +31,12 @@
   "packageRules": [
     {
       "description": "Automerge dependencies with built-in type definitions",
-      "matchPackageNames": ["discord.js"],
+      "matchPackageNames": ["discord.js", "@types/node", "typescript"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge patches",
+      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump"],
       "automerge": true
     },
     {
