@@ -27,7 +27,7 @@
     {
       "description": "Automerge dependencies with built-in type definitions",
       "matchPackageNames": ["discord.js"],
-      "extends": ["github>promise/renovate-config:automated"]
+      "extends": ["github>promise/renovate-config:fully-automated-repository"]
     },
     {
       "description": "Group Docusaurus dependencies",
