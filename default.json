@@ -8,8 +8,13 @@
   "assigneesFromCodeOwners": true,
   "labels": ["dependencies"],
   "platformCommit": true,
+  "platformAutomerge": true,
   "rangeStrategy": "pin",
   "transitiveRemediation": true,
+  "pinDigests": true,
+
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
   "prFooter": null,
 
   "dependencyDashboard": true,
@@ -17,47 +22,51 @@
   "dependencyDashboardLabels": ["dependencies"],
 
   "lockFileMaintenance": { "enabled": true },
-  "pinDigests": true,
-
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
+  "postUpdateOptions": ["npmDedupe"],
 
   "vulnerabilityAlerts": {
     "labels": ["dependencies", "security"],
     "rangeStrategy": "update-lockfile"
   },
 
-  "platformAutomerge": true,
   "packageRules": [
     {
       "description": "Automerge dependencies with built-in type definitions",
       "matchPackageNames": ["discord.js", "@types/node", "typescript"],
-      "automerge": true
+      "extends": ["github>promise/renovate-config:automerge"]
     },
     {
       "description": "Automerge patches",
       "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump"],
-      "automerge": true
+      "extends": ["github>promise/renovate-config:automerge"]
+    },
+    {
+      "description": "Automerge linting and testing dependencies",
+      "extends": ["packages:linters", "packages:test", "github>promise/renovate-config:automerge"]
     },
     {
       "description": "Group Docusaurus dependencies",
       "matchPackagePatterns": ["^@docusaurus/"],
-      "groupName": "Docusaurus"
+      "groupName": "Docusaurus",
+      "pin": { "groupName": null }
     },
     {
       "description": "Group React dependencies",
       "extends": ["packages:react"],
-      "groupName": "React"
+      "groupName": "React",
+      "pin": { "groupName": null }
     },
     {
       "description": "Group linting dependencies",
       "extends": ["packages:linters"],
-      "groupName": "linting"
+      "groupName": "linting",
+      "pin": { "groupName": null }
     },
     {
       "description": "Group testing dependencies",
       "extends": ["packages:test"],
-      "groupName": "testing"
+      "groupName": "testing",
+      "pin": { "groupName": null }
     }
   ]
 }
