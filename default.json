@@ -13,7 +13,7 @@
   "prFooter": null,
 
   "dependencyDashboard": true,
-  "dependencyDashboardHeader": null,
+  "dependencyDashboardHeader": "![](https://i.imgur.com/8pWeBmH.gif)",
   "dependencyDashboardLabels": ["dependencies"],
 
   "lockFileMaintenance": { "enabled": true },
@@ -43,6 +43,21 @@
       "description": "Group Docusaurus dependencies",
       "matchPackagePatterns": ["^@docusaurus/"],
       "groupName": "Docusaurus"
+    },
+    {
+      "description": "Group React dependencies",
+      "extends": ["packages:react"],
+      "groupName": "React"
+    },
+    {
+      "description": "Group linting dependencies",
+      "extends": ["packages:linters"],
+      "groupName": "linting"
+    },
+    {
+      "description": "Group testing dependencies",
+      "extends": ["packages:test"],
+      "groupName": "testing"
     }
   ]
 }
