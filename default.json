@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "The default configuration for Renovate",
+
+  "timezone": "Europe/Oslo",
+
+  "assignees": ["promise"],
+  "reviewersFromCodeOwners": true,
+  "labels": ["dependencies"],
+  "platformCommit": true,
+  "rangeStrategy": "pin",
+  "transitiveRemediation": true,
+  "prFooter": null,
+
+  "dependencyDashboard": true,
+  "dependencyDashboardHeader": null,
+  "dependencyDashboardLabels": ["dependencies"],
+
+  "lockFileMaintenance": { "enabled": true },
+
+  "vulnerabilityAlerts": {
+    "labels": ["dependencies", "security"],
+    "rangeStrategy": "update-lockfile"
+  },
+
+  "packageRules": [
+    {
+      "description": "Automerge dependencies with built-in type definitions",
+      "matchPackageNames": ["discord.js"],
+      "extends": ["github>promise/renovate-config:automated"]
+    },
+    {
+      "description": "Group Docusaurus dependencies",
+      "matchPackagePatterns": ["^@docusaurus/"],
+      "group": "docusaurus"
+    }
+  ]
+}
