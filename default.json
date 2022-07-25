@@ -17,6 +17,7 @@
   "dependencyDashboardLabels": ["dependencies"],
 
   "lockFileMaintenance": { "enabled": true },
+  "pinDigests": true,
 
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
