@@ -41,7 +41,8 @@
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
-      "description": "Automerge linting and testing dependencies",
+      "description": "Automerge minor linting and testing dependency upgrades",
+      "matchUpdateTypes": ["minor"],
       "extends": ["packages:linters", "packages:test", "github>promise/renovate-config:automerge"]
     },
     {
