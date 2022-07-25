@@ -33,7 +33,7 @@
     {
       "description": "Group Docusaurus dependencies",
       "matchPackagePatterns": ["^@docusaurus/"],
-      "group": "docusaurus"
+      "groupName": "Docusaurus"
     }
   ]
 }
