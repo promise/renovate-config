@@ -4,8 +4,8 @@
 
   "timezone": "Europe/Oslo",
 
-  "assignees": ["promise"],
-  "reviewersFromCodeOwners": true,
+  "reviewers": ["promise"],
+  "assigneesFromCodeOwners": true,
   "labels": ["dependencies"],
   "platformCommit": true,
   "rangeStrategy": "pin",
