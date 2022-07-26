@@ -49,25 +49,25 @@
       "description": "Group Docusaurus dependencies",
       "matchPackagePatterns": ["^@docusaurus/"],
       "groupName": "Docusaurus",
-      "pin": { "groupName": null }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
     {
       "description": "Group React dependencies",
       "extends": ["packages:react"],
       "groupName": "React",
-      "pin": { "groupName": null }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
     {
       "description": "Group linting dependencies",
       "extends": ["packages:linters"],
       "groupName": "linting",
-      "pin": { "groupName": null }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
     {
       "description": "Group testing dependencies",
       "extends": ["packages:test"],
       "groupName": "testing",
-      "pin": { "groupName": null }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     }
   ]
 }
