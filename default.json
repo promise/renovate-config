@@ -41,8 +41,7 @@
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
-      "description": "Automerge minor linting and testing dependency upgrades",
-      "matchUpdateTypes": ["minor"],
+      "description": "Automerge linting and testing dependency upgrades",
       "extends": ["packages:linters", "packages:test", "github>promise/renovate-config:automerge"]
     },
     {
@@ -53,7 +52,7 @@
     },
     {
       "description": "Group React dependencies",
-      "extends": ["packages:react"],
+      "matchPackagePrefixes": ["react", "@types/react"],
       "groupName": "React",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
