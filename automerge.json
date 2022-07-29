@@ -3,5 +3,6 @@
   "description": "Mutual config file for automerging",
 
   "automerge": true,
+  "platformAutomerge": true,
   "addLabels": ["auto-merge"]
 }

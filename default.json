@@ -8,7 +8,6 @@
   "assigneesFromCodeOwners": true,
   "labels": ["dependencies"],
   "platformCommit": true,
-  "platformAutomerge": true,
   "rangeStrategy": "pin",
   "transitiveRemediation": true,
   "pinDigests": true,
