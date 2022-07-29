@@ -67,6 +67,12 @@
       "extends": ["packages:test"],
       "groupName": "testing",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+    },
+    {
+      "description": "Group mongoose with typegoose",
+      "matchPackageNames": ["mongoose", "@typegoose/typegoose"],
+      "groupName": "mongoose",
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     }
   ]
 }
