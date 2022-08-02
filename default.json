@@ -58,6 +58,7 @@
     },
     {
       "description": "Group linting dependencies",
+      "matchPackageNames": ["eslint-config-promise", "promise/eslint-config"],
       "extends": ["packages:linters"],
       "groupName": "linting",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
