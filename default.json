@@ -46,7 +46,7 @@
     },
     {
       "description": "Group Docusaurus dependencies",
-      "matchPackagePatterns": ["^@docusaurus/"],
+      "matchPackagePrefixes": ["@docusaurus/"],
       "groupName": "Docusaurus",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
@@ -73,6 +73,11 @@
       "matchPackageNames": ["mongoose", "@typegoose/typegoose"],
       "groupName": "mongoose",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+    },
+    {
+      "description": "Avoid pinning peer dependencies",
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "widen"
     }
   ]
 }
