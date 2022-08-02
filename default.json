@@ -78,7 +78,7 @@
     {
       "description": "Avoid pinning peer dependencies",
       "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "widen"
+      "rangeStrategy": "bump"
     }
   ]
 }
