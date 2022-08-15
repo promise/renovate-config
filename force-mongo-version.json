@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Enforces a mongo Docker image version. Use `:force-mongo-version(4)` to force version 4",
+
+  "packageRules": [
+    {
+      "description": "Force Mongo image version",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchPackageNames": ["mongo"],
+      "allowedVersions": "{{arg0}}"
+    }
+  ]
+}
