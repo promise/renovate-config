@@ -31,13 +31,18 @@
 
   "packageRules": [
     {
+      "description": "Automerge lockfile after schedule window to prevent multiple pull requests",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "automergeSchedule": ["after 5am on Monday", "* * * * 0,2,3,4,5,6"],
+    },
+    {
       "description": "Automerge dependencies with built-in type definitions",
       "matchPackageNames": ["discord.js", "@types/node", "typescript"],
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
       "description": "Automerge patches",
-      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump"],
+      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "rollback", "bump"],
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
