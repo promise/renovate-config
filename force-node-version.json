@@ -6,7 +6,7 @@
     {
       "description": "Force @types/node dependency version",
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/node"],
+      "matchPackageNames": ["node", "@types/node"],
       "allowedVersions": "{{arg0}}.x"
     },
     {
