@@ -21,7 +21,12 @@
   "dependencyDashboardHeader": "![](https://i.imgur.com/kX4uzqH.gif)",
   "dependencyDashboardLabels": ["dependencies"],
 
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "reviewers": [],
+    "assigneesFromCodeOwners": false,
+    "automergeSchedule": ["every 1 second except before 5:00am on monday"]
+  },
   "postUpdateOptions": ["npmDedupe"],
 
   "vulnerabilityAlerts": {
