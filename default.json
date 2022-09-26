@@ -25,10 +25,7 @@
     "enabled": true,
     "reviewers": [],
     "assigneesFromCodeOwners": false,
-    "automergeSchedule": [
-      "every 1 day except on monday",
-      "on monday after 5am"
-    ]
+    "schedule": ["every 1st day of the month"]
   },
   "postUpdateOptions": ["npmDedupe"],
 
