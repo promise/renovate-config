@@ -25,7 +25,7 @@
     "enabled": true,
     "reviewers": [],
     "assigneesFromCodeOwners": false,
-    "schedule": ["every 1st day of the month"]
+    "schedule": ["before 5am on the first day of the month"]
   },
   "postUpdateOptions": ["npmDedupe"],
 
