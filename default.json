@@ -84,6 +84,16 @@
       "description": "Avoid pinning peer dependencies",
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "bump"
+    },
+    {
+      "description": "Auto-update lock file for eslint config",
+      "matchPackageNames": ["eslint-config-promise", "promise/eslint-config"],
+      "lockFileMaintenance": {
+        "branchTopic": "linting-config",
+        "commitMessageAction": "Linting config update",
+        "schedule": ["at any time"],
+        "prBodyDefinitions": { "Change": "Linting config updated" }
+      }
     }
   ]
 }
