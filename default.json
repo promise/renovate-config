@@ -28,6 +28,15 @@
     "schedule": ["before 5am on the first day of the month"]
   },
   "postUpdateOptions": ["npmDedupe"],
+  
+  "pin": {
+    "recreateClosed": true,
+    "rebaseStalePrs": true
+  },
+  "pinDigest": {
+    "recreateClosed": true,
+    "rebaseStalePrs": true
+  },
 
   "vulnerabilityAlerts": {
     "labels": ["dependencies", "security"],
