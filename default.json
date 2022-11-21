@@ -4,8 +4,8 @@
 
   "timezone": "Europe/Oslo",
 
-  "reviewers": ["promise"],
-  "assigneesFromCodeOwners": true,
+  "assignees": ["promise"],
+  "reviewersFromCodeOwners": true,
   "labels": ["dependencies"],
   "platformCommit": true,
   "platformAutomerge": true,
