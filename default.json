@@ -42,6 +42,10 @@
     "labels": ["dependencies", "security"],
     "rangeStrategy": "update-lockfile"
   },
+  
+  "git-submodules": {
+    "enabled": true
+  },
 
   "packageRules": [
     {
