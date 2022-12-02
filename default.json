@@ -27,15 +27,9 @@
     "extends": ["github>promise/renovate-config:automerge"]
   },
   "postUpdateOptions": ["npmDedupe"],
-  
-  "pin": {
-    "recreateClosed": true,
-    "rebaseStalePrs": true
-  },
-  "pinDigest": {
-    "recreateClosed": true,
-    "rebaseStalePrs": true
-  },
+ 
+  "recreateClosed": true,
+  "rebaseStalePrs": true,
 
   "vulnerabilityAlerts": {
     "labels": ["dependencies", "security"],
