@@ -3,13 +3,12 @@ _extends: .github
 repository:
   name: renovate-config
   description: "A collection of configuration files for Renovate"
-  homepage: null
-  topics: null
   private: false
+  is_template: true
 
 branches:
   - name: main
     protection:
       required_status_checks:
-        contexts:
-          - "Get list of all JSON files"
+        checks:
+          - context: Get list of all JSON files
