@@ -31,6 +31,8 @@
   "recreateClosed": true,
   "rebaseStalePrs": true,
 
+  "semanticCommits": "enabled",
+
   "vulnerabilityAlerts": {
     "labels": ["dependencies", "security"],
     "rangeStrategy": "update-lockfile"
