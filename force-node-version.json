@@ -20,6 +20,11 @@
       "matchManagers": ["dockerfile"],
       "matchPackageNames": ["mcr.microsoft.com/vscode/devcontainers/javascript-node"],
       "allowedVersions": "0-{{arg0}}-bullseye"
+    },
+    {
+      "description": "Force nvm version",
+      "matchManagers": ["nvm"],
+      "allowedVersions": "{{arg0}}"
     }
   ]
 }
