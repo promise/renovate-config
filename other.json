@@ -4,7 +4,7 @@
 
   "timezone": "Europe/Oslo",
 
-  "assignees": ["promise"],
+  "assignees": ["{{arg0}}"],
   "labels": ["dependencies"],
   "platformCommit": true,
   "platformAutomerge": true,
