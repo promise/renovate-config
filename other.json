@@ -92,6 +92,11 @@
       "description": "Avoid pinning peer dependencies",
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "bump"
+    },
+    {
+      "description": "Automerge node version",
+      "matchManagers": ["nvm"],
+      "extends": ["github>promise/renovate-config:automerge"]
     }
   ]
 }
