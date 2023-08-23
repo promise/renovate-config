@@ -26,7 +26,6 @@
     "schedule": ["before 5am on the first day of the month"],
     "extends": ["github>promise/renovate-config:automerge"]
   },
-  "postUpdateOptions": ["npmDedupe"],
 
   "recreateClosed": true,
   "rebaseStalePrs": true,
