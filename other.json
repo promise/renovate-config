@@ -19,7 +19,6 @@
   "dependencyDashboard": true,
   "dependencyDashboardHeader": "![](https://i.imgur.com/kX4uzqH.gif)",
   "dependencyDashboardLabels": ["dependencies"],
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
 
   "lockFileMaintenance": {
     "enabled": true,
@@ -27,8 +26,6 @@
     "schedule": ["before 5am on the first day of the month"],
     "extends": ["github>promise/renovate-config:automerge"]
   },
-
-  "osvVulnerabilityAlerts": true,
 
   "recreateClosed": true,
   "rebaseStalePrs": true,
