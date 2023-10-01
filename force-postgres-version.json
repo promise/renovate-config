@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Enforces a postgres Docker image version. Use `:force-postgres-version(16)` to force version 16",
+
+  "packageRules": [
+    {
+      "description": "Force Postgres image version",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchPackageNames": ["postgres"],
+      "allowedVersions": "{{arg0}}"
+    }
+  ]
+}
