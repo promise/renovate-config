@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Enforces a redis Docker image version. Use `:force-redis-version(5)` to force version 5",
+
+  "packageRules": [
+    {
+      "description": "Force Redis image version",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "matchPackageNames": ["redis"],
+      "allowedVersions": "{{arg0}}"
+    }
+  ]
+}
