@@ -96,6 +96,12 @@
       "description": "Automerge node version",
       "matchManagers": ["nvm"],
       "extends": ["github>promise/renovate-config:automerge"]
+    },
+    {
+      "description": "Group Python upgrades",
+      "matchPackageNames": ["python"],
+      "groupName": "python",
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     }
   ]
 }
