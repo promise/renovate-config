@@ -102,6 +102,12 @@
       "matchPackageNames": ["python"],
       "groupName": "python",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+    },
+    {
+      "description": "Group @remix-run dependencies",
+      "matchPackagePrefixes": ["@remix-run/"],
+      "groupName": "remix-run",
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     }
   ]
 }
