@@ -15,7 +15,7 @@ jobs:
       files: ${{ steps.list-files.outputs.files }}
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4
       - name: List all JSON files
         id: list-files
         run: echo "::set-output name=files::$(ls *.json | jq -R -s -c 'split("\n")[:-1]')"
@@ -30,6 +30,6 @@ jobs:
         manifest: ${{ fromJson(needs.list-files.outputs.files) }}
 
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4
       - name: Validate config
         run: RENOVATE_CONFIG_FILE=${{ matrix.manifest }} npx -p renovate -c renovate-config-validator -y
