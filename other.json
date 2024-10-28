@@ -99,7 +99,7 @@
     },
     {
       "description": "Group Python docker tags and dependency",
-      "matchDatasources": ["docker", "poetry"],
+      "matchDatasources": ["docker", "pypi"],
       "matchPackageNames": ["python"],
       "groupName": "python",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
