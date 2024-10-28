@@ -101,19 +101,22 @@
       "description": "Group Python docker tags and dependency (1/2)",
       "matchPackageNames": ["python"],
       "groupName": "python",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" },
+      "extends": ["github>promise/renovate-config:automerge"]
     },
     {
       "description": "Group Python docker tags and dependency (2/2)",
       "matchDepNames": ["python"],
       "groupName": "python",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" },
+      "extends": ["github>promise/renovate-config:automerge"]
     },
     {
       "description": "Group @remix-run dependencies",
       "matchPackagePrefixes": ["@remix-run/"],
       "groupName": "remix-run",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" },
+      "extends": ["github>promise/renovate-config:automerge"]
     }
   ]
 }
