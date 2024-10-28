@@ -44,7 +44,7 @@
   "packageRules": [
     {
       "description": "Automerge dependencies with built-in type definitions",
-      "matchPackageNames": ["discord.js", "@types/node", "typescript"],
+      "matchPackageNames": ["discord.js", "@types/node", "typescript", "@total-typescript/ts-reset", "winston", "match-sorter"],
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
