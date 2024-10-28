@@ -98,7 +98,8 @@
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
-      "description": "Group Python upgrades",
+      "description": "Group Python docker tags and dependency",
+      "matchDatasources": ["docker", "poetry"],
       "matchPackageNames": ["python"],
       "groupName": "python",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
