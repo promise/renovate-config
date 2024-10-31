@@ -118,5 +118,11 @@
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" },
       "extends": ["github>promise/renovate-config:automerge"]
     }
+    {
+      "description": "Group eslint with types",
+      "matchPackageNames": ["eslint", "@types/eslint"],
+      "groupName": "eslint",
+      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+    },
   ]
 }
