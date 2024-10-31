@@ -119,8 +119,8 @@
       "extends": ["github>promise/renovate-config:automerge"]
     }
     {
-      "description": "Group eslint with types",
-      "matchPackageNames": ["eslint", "@types/eslint"],
+      "description": "Group express with types",
+      "matchPackageNames": ["express", "@types/express"],
       "groupName": "eslint",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     },
