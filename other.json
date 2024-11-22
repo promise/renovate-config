@@ -117,12 +117,12 @@
       "groupName": "remix-run",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" },
       "extends": ["github>promise/renovate-config:automerge"]
-    }
+    },
     {
       "description": "Group express with types",
       "matchPackageNames": ["express", "@types/express"],
       "groupName": "eslint",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
-    },
+    }
   ]
 }
