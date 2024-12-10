@@ -121,7 +121,7 @@
     {
       "description": "Group express with types",
       "matchPackageNames": ["express", "@types/express"],
-      "groupName": "eslint",
+      "groupName": "express",
       "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
     }
   ]
