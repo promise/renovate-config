@@ -98,6 +98,11 @@
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
+      "description": "Automerge pnpm updates",
+      "matchPackageNames": ["pnpm"],
+      "extends": ["github>promise/renovate-config:automerge"]
+    },
+    {
       "description": "Group Python docker tags and dependency (1/2)",
       "matchPackageNames": ["python"],
       "groupName": "python",
