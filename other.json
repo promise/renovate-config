@@ -1,20 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Default Renovate config where argument is assignee",
+  "description": "Default Renovate config tuned for current Renovate best practices and low-noise automation.",
+
+  "extends": [
+    "config:best-practices",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
+    "group:monorepos"
+  ],
 
   "timezone": "Europe/Oslo",
 
   "assignees": ["{{arg0}}"],
   "labels": ["dependencies"],
-  "platformCommit": true,
+  "platformCommit": "auto",
   "platformAutomerge": true,
-  "rangeStrategy": "pin",
+  "rangeStrategy": "auto",
   "transitiveRemediation": true,
   "pinDigests": true,
 
-  "prHourlyLimit": 0,
+  "prHourlyLimit": 2,
   "prConcurrentLimit": 0,
+  "prCreation": "immediate",
   "prFooter": null,
+  "rebaseWhen": "behind-base-branch",
+  "recreateWhen": "auto",
 
   "dependencyDashboard": true,
   "dependencyDashboardHeader": "![](https://i.imgur.com/kX4uzqH.gif)",
@@ -27,9 +37,7 @@
     "extends": ["github>promise/renovate-config:automerge"]
   },
 
-  "recreateClosed": true,
   "rebaseStalePrs": true,
-
   "semanticCommits": "enabled",
 
   "vulnerabilityAlerts": {
@@ -48,7 +56,7 @@
       "extends": ["github>promise/renovate-config:automerge"]
     },
     {
-      "description": "Automerge patches",
+      "description": "Automerge low-risk patch and digest updates",
       "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest", "rollback", "bump"],
       "extends": ["github>promise/renovate-config:automerge"]
     },
